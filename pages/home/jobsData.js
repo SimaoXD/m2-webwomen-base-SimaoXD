@@ -7,6 +7,7 @@ const jobsData = [
     descrition:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     modalities: ["Hibrido", "Presencial"],
+    selectJob: "Selecionar Vaga",
   },
   {
     id: 1,
@@ -16,6 +17,7 @@ const jobsData = [
     descrition:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     modalities: ["Home Office", "Presencial"],
+    selectJob: "Selecionar Vaga",
   },
   {
     id: 2,
@@ -25,5 +27,6 @@ const jobsData = [
     descrition:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     modalities: ["Home Office", "Presencial"],
+    selectJob: "Selecionar Vaga",
   },
 ];
