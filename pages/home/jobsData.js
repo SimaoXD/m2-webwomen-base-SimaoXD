@@ -30,3 +30,5 @@ const jobsData = [
     selectJob: "Selecionar Vaga",
   },
 ];
+
+const cart = []

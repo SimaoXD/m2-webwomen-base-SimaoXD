@@ -79,6 +79,7 @@
     height: 100%;
     flex-grow: 15;
     align-items: center;
+    
 
 }
 
@@ -90,6 +91,7 @@
     padding: 60px;
     gap:28px;  
     font-family: 'Poppins';
+    box-shadow:  4px 4px 4px rgba(20, 20, 20, 0.272);
 
 }
 
@@ -137,4 +139,30 @@
 
 
 
+}
+
+/* //carrinho// */
+.list__cart__container{
+    list-style: none;
+    padding:32px;
+    
+}
+
+.cart__job--work{
+    list-style: none;
+    padding: 12px;
+    box-shadow: 4px 4px 4px 4px rgba(29, 105, 2, 0.747);
+}
+
+.cart__button--remove{
+    background-image: url('../../assets/img/trash.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width:44px;
+    height:38px;
+    background-color: #F1F3F5;
+
+    border: 2px solid #F1F3F5;
+    border-radius: 8px;
 }
