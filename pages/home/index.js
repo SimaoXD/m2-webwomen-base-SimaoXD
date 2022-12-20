@@ -19,9 +19,11 @@ function renderVagas(empregos){
 function createCard(element){
     const container = document.createElement('li')
     const title = document.createElement('h2')
+    const alert = document.createElement('div')
     const enterprise = document.createElement('span')
     const city = document.createElement('span')
     const descrition = document.createElement('p')
+    const alert2 = document.createElement('div')
     const modalities = document.createElement('a')
     const button = document.createElement('button')
 
@@ -31,10 +33,8 @@ function createCard(element){
     title.classList.add('list__vagas--title')
     title.innerText = element.title
 
-    enterprise.classList.add('list__vagas--enterprise')
+    alert.classList.add('list__vagas--alert')
     enterprise.innerText = element.enterprise
-
-    city.classList.add('list__vagas--city')
     city.innerText = element.location
 
     descrition.classList.add('list__vagas--descrition')
@@ -48,9 +48,13 @@ function createCard(element){
     button.classList.add('list__vagas--button')
     button.innerText = element.selectJob
     button.dataset.id = element.id
+    
+    alert2.classList.add('list__vagas--info')
 
 
-    container.append(title, enterprise, city, descrition, modalities, button)
+    container.append(title, alert, descrition, alert2)
+    alert.append(enterprise, city)
+    alert2.append(modalities,button)
 
     return container
 
@@ -86,9 +90,10 @@ function createEmptyCart(){
     
 
     container.classList.add('cart__item--empty')
+
     
     title.innerText = 'Carrinho Vazio'
-    message.innerText =  'selecione um emprego'
+    message.innerText =  'Nenhuma vaga selecionada'
 
     container.append(title, message)
     return container
