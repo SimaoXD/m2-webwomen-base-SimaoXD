@@ -1,3 +1,9 @@
+
+function newLocalStorage(array) {   
+    const newArrayJson = JSON.stringify(array)
+    localStorage.setItem("jobsCart", newArrayJson);
+}
+
 function renderVagas(empregos){
     const list = document.querySelector('.list__container')
 
@@ -37,6 +43,8 @@ function createCard(element){
     modalities.classList.add('list__vagas--modalities')
     modalities.innerText = element.modalities
 
+    newLocalStorage(cart)
+
     button.classList.add('list__vagas--button')
     button.innerText = element.selectJob
     button.dataset.id = element.id
@@ -48,6 +56,7 @@ function createCard(element){
 
 }
 renderVagas(jobsData)
+newLocalStorage(cart)
 
 
 function renderSelectJob(array){
@@ -99,6 +108,8 @@ function creatCartJob(element){
     titleCart.innerText = element.title
     enterpriseCart.innerText = element.enterprise
     cityCart.innerText = element.location
+
+    newLocalStorage(cart)
 
     button.classList.add('cart__button--remove')
     button.dataset.cartId = element.cartId
@@ -152,6 +163,9 @@ function removeCart(array){
     })
 
 }
+
 addToCart()
 renderSelectJob(cart)
+newLocalStorage(cart)
+
 

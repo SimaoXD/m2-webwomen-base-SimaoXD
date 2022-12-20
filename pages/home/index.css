@@ -71,6 +71,13 @@
 }
 
 /*MAIN*/
+main h2{
+    color:var(--color-grey-1);
+    font-size: 22px;
+    font-weight: var(--title-3);
+    padding: 44px 22px 44px 22px;
+
+}
 
 .list__container{
     
@@ -145,13 +152,20 @@
 .list__cart__container{
     list-style: none;
     padding:32px;
+    flex-direction: column;
+    float: right;
+    position:relative;
+    top: -120rem;
+    left: 13rem;
+    
     
 }
 
 .cart__job--work{
+    width: 40%;
     list-style: none;
     padding: 12px;
-    box-shadow: 4px 4px 4px 4px rgba(29, 105, 2, 0.747);
+    box-shadow: 4px 4px 4px 4px rgba(1, 4, 0, 0.747);
 }
 
 .cart__button--remove{
@@ -165,4 +179,17 @@
 
     border: 2px solid #F1F3F5;
     border-radius: 8px;
+}
+
+
+@media(min-width: 575px) { 
+    .list__cart__container {
+        width: 35%;
+        margin-top: 0;
+    }
+
+    .cart__job--work{
+        padding: 32px 20px 32px 20px;
+    }
+
 }
